@@ -1,11 +1,15 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Link from "next/link";
 import Pets from "./pets";
 
 const Home: NextPage = () => {
-  return <div>Home </div>;
+  return (
+    <div>
+      <Link href="/pets">
+        Navigate to Pets
+      </Link>
+    </div>
+  );
 };
 
 export default Home;
