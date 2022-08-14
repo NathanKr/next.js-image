@@ -1,15 +1,13 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-import Image from "next/image";
+import KeepImageAspectRatio from "../src/KeepImageAspectRatio";
 
 const Home: NextPage = () => {
   return (
     <div>
       <Link href="/pets">Navigate to Pets</Link>
-      <p>Show image with fill</p>
-      <div style={{ width: 300, height: 400 , position: 'relative' }}>
-        <Image alt="pet-with-fill" layout="fill" src="/images/1.jpg" />
-      </div>
+      <h2>Show image that keep aspect ratio given width 100% (like in https://nathankrasney.com/Testimonials)</h2>
+      <KeepImageAspectRatio/>
     </div>
   );
 };

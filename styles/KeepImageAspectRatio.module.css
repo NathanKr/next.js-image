@@ -1,0 +1,10 @@
+.container {
+    margin: 4rem;
+    border: 2px solid red;
+  }
+  
+  .img_wrapper {
+    position: relative;
+    height: 0;
+  }
+  
