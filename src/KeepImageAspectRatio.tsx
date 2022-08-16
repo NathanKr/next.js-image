@@ -1,7 +1,7 @@
 import ImageWithAspectRatio from "./ImageWithAspectRatio";
 
-const ASPECT_RATIO_lion_g36fe27920_1280 = 1.5;
-const ASPECT_RATIO_PECENT_lion_gec6da36bc_1920 = 0.63;
+const ASPECT_RATIO_lion_g36fe27920_1280 = 0.67; // width / height ->853/1280
+const ASPECT_RATIO_PECENT_lion_gec6da36bc_1920 = 1.59; // width / height -> 1920 / 1214
 
 const KeepImageAspectRatio = () => {
   return (

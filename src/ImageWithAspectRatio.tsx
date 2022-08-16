@@ -13,13 +13,13 @@ const ImageWithAspectRatio: FC<IProps> = ({
   imgSrc,
   altValue,
 }) => {
-  const aspectRratioPercentage = aspectRratio * 100;
+  const ratioPercentage = (1/aspectRratio) * 100;
   return (
     <div className={styles.container}>
       <div
         className={styles.img_wrapper}
         style={{
-          paddingTop: `${aspectRratioPercentage}%`,
+          paddingTop: `${ratioPercentage}%`,
         }}
       >
         <Image layout="fill" objectFit="cover" src={imgSrc} alt={altValue} />
